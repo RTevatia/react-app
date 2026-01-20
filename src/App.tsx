@@ -1,15 +1,9 @@
-import { useState } from "react";
-import Alert from "./components/Alert";
-import Button from "./components/Button";
+import { BsCalendar2CheckFill } from "react-icons/bs";
 
 function App() {
-  const [alertVisible, setAlertVisibility] = useState(false);
   return (
     <div>
-      {alertVisible && (
-        <Alert onClose={() => setAlertVisibility(false)}>My Alert</Alert>
-      )}
-      <Button onclick={() => setAlertVisibility(true)}>My Button</Button>
+      <BsCalendar2CheckFill color="red" size={40}/>
     </div>
   );
 }
